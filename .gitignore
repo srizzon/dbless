@@ -1,0 +1,12 @@
+node_modules
+.DS_Store
+*.log
+.env
+.env.*
+.pgdata
+dist
+build
+.bun
+*.tsbuildinfo
+.vscode/
+.idea/

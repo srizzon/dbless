@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Resolve symlinks so `npm link` works. $0 may be a symlink in
+# /usr/local/bin or ~/.nvm/.../bin pointing back at the repo's bin/dbless.
+src="${BASH_SOURCE[0]}"
+while [ -L "$src" ]; do
+  dir="$(cd -P "$(dirname "$src")" && pwd)"
+  src="$(readlink "$src")"
+  [[ "$src" != /* ]] && src="$dir/$src"
+done
+here="$(cd -P "$(dirname "$src")" && pwd)"
+exec node --experimental-strip-types --no-warnings "$here/dbless.ts" "$@"

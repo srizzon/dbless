@@ -1,0 +1,47 @@
+{
+  "name": "dbless",
+  "version": "0.1.0",
+  "description": "Per-worktree Postgres isolation. Same DATABASE_URL in every worktree, different physical database underneath.",
+  "type": "module",
+  "bin": {
+    "dbless": "./bin/dbless"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "Apache-2.0",
+  "author": "Samuel Rizzon",
+  "homepage": "https://github.com/srizzon/dbless#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srizzon/dbless.git"
+  },
+  "bugs": {
+    "url": "https://github.com/srizzon/dbless/issues"
+  },
+  "keywords": [
+    "postgres",
+    "postgresql",
+    "git-worktree",
+    "worktree",
+    "branching",
+    "database",
+    "isolation",
+    "ai-agents",
+    "parallel",
+    "developer-tools",
+    "cli"
+  ],
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "HOW-IT-WORKS.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "embedded-postgres": "^18.3.0-beta.17",
+    "pg": "^8.20.0"
+  }
+}

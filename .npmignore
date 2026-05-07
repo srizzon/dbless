@@ -1,0 +1,16 @@
+# What to keep OUT of the npm tarball.
+# (the `files` field in package.json is the whitelist; this is belt-and-suspenders.)
+.github
+.husky
+.vscode
+.idea
+.live-demo
+.demo-worktrees
+.gitcity-worktrees
+*.log
+*.tsbuildinfo
+.DS_Store
+AGENTS.md
+.prettierrc
+.prettierignore
+.gitignore
